@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comppatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de exemplo de Petshop</title>
+
+    <!--Importação-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="stylesheet" href="/CSS/keyframes.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/responsividade.css">
+
+</head>
+<body>
+    <!--Header section INI-->
+    <header id="header" class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-paw"></i>
+            PetShop
+        </a>
+
+        <nav id="navBarMenu" class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#shop">Agendamento</a>
+            <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu_btn" class="fas fa-bars" onclick="showActiveElementToggle('navBarMenu')"></div>
+            <div id="login_btn" class="fas fa-user" onclick="showActiveElementToggle('formLogin')"></div>
+        </div>
+
+
+        <form id="formLogin" action="" class="login-form">
+            <h3>Login</h3>
+            <input type="email" name="" id="" placeholder="Digite seu e-mail" class="box">
+            <input type="password" name="" id="" placeholder="Digite sua senha" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="checkRemember" />
+                <label for="checkRemember">Lembrar-me</label>
+            </div>
+            <input type="submit" value="Login" class="btn form-btn" />
+            <div class="links">
+                <a href=""> Esqueceu seu e-mail?</a>
+                <a href=""> Cadastrar-se</a>
+            </div>
+        </form>
+
+    </header>
+    <!--Header section FIM-->
+
+    <!--Home section INI -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>
+                <span>Olá,</span>
+                Bem-vindo ao Pet Shop
+                <a href="#" class="btn white-btn">Agendar Agora</a>
+            </h3>
+        </div>
+
+        <svg class="svg-wave" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:white;"></path>
+          </svg>
+    </section>
+    <!--Home section FIM -->
+
+
+
+
+    <!--Sobre section INI-->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="/IMG/banhoGato.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>
+                Vantagens de um 
+                <span>Banho</span>
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Explicabo doloremque quis ex. Maiores, consequuntur voluptatibus nihil quam
+                 nulla deserunt dolore, fugiat obcaecati, blanditiis 
+                 tempora ratione quasi eligendi nobis a voluptatum.
+            </p>
+            <a href="#" class="btn">
+                Agendar Agora
+             </a>
+        </div>
+    </section>
+    <!--Sobre section FIM-->
+
+    <!--Contatos - INI-->
+    <section class="contact" id="contact">
+        <div class="image">
+            <img src="/IMG/phoneDog.jpg" alt="">
+        </div>
+
+        <form action="">
+            <h3>Entrar em Contato</h3>
+            <input type="text" placeholder="Digite seu nome" class="box"/>
+            <input type="email" placeholder="Digite e-mail" class="box"/>
+            <input type="tumber" placeholder="Digite número" class="box"/>
+            <textarea name="" cols="30" rows="10" id="" placeholder="Digite sua mensagem"></textarea>
+            <input type="submit" value="Enviar Mensagem" class="btn form-btn">
+        </form>
+
+    </section>
+    <!--Contatos - FIM-->
+
+
+    <section class="footer">
+        <svg class="svg-wave" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:white;"></path>
+          </svg>
+
+          <div class="items-information">
+            <div class="share">
+                <a href="" class="btn white-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+                <a href="" class="btn white-btn" >
+                    <i class="fab fa-twitter"></i>
+                    Twiiter
+                </a>
+                <a href="" class="btn white-btn">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="" class="btn white-btn">
+                    <i class="fab fa-linkedin"></i>
+                    linkedin
+                </a>
+            </div>
+    
+            <div class="credit">
+                Criado por
+                <span>Desenvolvedor Pedro | Todos os direitos reservados!</span>
+            </div>
+          </div>
+       
+    </section>
+
+
+    <!--JS-->
+    <script src="/JS/script.js"></script>
+</body>
+</html>
